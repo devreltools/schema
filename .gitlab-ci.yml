@@ -1,5 +1,5 @@
 image: nixery.dev/shell/gnumake/cue
 
-team.member:
+tests:
   script:
     - make test
