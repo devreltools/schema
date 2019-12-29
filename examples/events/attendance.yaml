@@ -1,0 +1,7 @@
+event: "Test Event"
+---
+event: "Test Event"
+role: ["Presentation"]
+---
+event: "Test Event"
+role: ["Sponsor", "Workshop"]

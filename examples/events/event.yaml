@@ -1,0 +1,4 @@
+name: "Test Event"
+type: "Conference"
+dateStart: 2020-01-01T17:00:00Z
+dateFinish: 2020-01-01T17:00:01Z

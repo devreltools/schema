@@ -1,0 +1,1 @@
+module: "devrel.tools/schema"
