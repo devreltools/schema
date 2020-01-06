@@ -4,9 +4,9 @@ Member :: {
 	name:  string
 	email: string
 	handles: {
-		github?:  string
-		gitlab?:  string
-		slack?:   string
-		twitter?: string
+		github:  string | *""
+		gitlab:  string | *""
+		slack:   string | *""
+		twitter: string | *""
 	}
 }
