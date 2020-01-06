@@ -12,5 +12,3 @@ Event :: {
 	dateStart:  time.Time()
 	dateFinish: time.Time() & >dateStart
 }
-
-Event

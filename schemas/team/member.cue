@@ -10,5 +10,3 @@ Member :: {
 		twitter?: string
 	}
 }
-
-Member
