@@ -6,5 +6,3 @@ Attendance :: {
   event: string
   role: [AttendanceRole, ...AttendanceRole]
 }
-
-Attendance
