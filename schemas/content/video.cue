@@ -1,8 +1,10 @@
 package content
 
+VideoSource :: "YouTube" | "Vimeo"
+
 Video :: {
   Metadata
 
-  youTubeId: string | *""
-  vimeoId: string | *""
+  source : VideoSource
+  sourceId: string
 }
