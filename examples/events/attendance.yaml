@@ -1,7 +1,5 @@
 event: "Test Event"
----
-event: "Test Event"
-role: ["Presentation"]
+role: ["Attendee"]
 ---
 event: "Test Event"
 role: ["Sponsor", "Workshop"]

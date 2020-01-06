@@ -1,12 +1,14 @@
 package team
 
 Member :: {
-  name: string
-  handles: {
-    github:  string
-    slack:   string
-    twitter: string
-  }
+	name:  string
+	email: string
+	handles: {
+		github?:  string
+		gitlab?:  string
+		slack?:   string
+		twitter?: string
+	}
 }
 
 Member

@@ -5,11 +5,12 @@ import "time"
 EventType :: "Conference" | "User Group"
 
 Event :: {
-  name: string
-  type: EventType
+  id: =~ "^[a-z0-9_-]+$"
+	name: string
+	type: EventType
 
-  dateStart: time.Time()
-  dateFinish: time.Time() & > dateStart
+	dateStart:  time.Time()
+	dateFinish: time.Time() & >dateStart
 }
 
 Event
