@@ -1,5 +1,19 @@
 event: "Test Event"
 role: ["Attendee"]
+travel:
+  airportCodes: ["GLA", "PHX"]
+  cost:
+    currency: "GBP"
+    price: 1500.00
 ---
 event: "Test Event"
 role: ["Sponsor", "Workshop"]
+travel:
+  airportCodes: ["SFO", "AMS"]
+  cost:
+    currency: "USD"
+    price: 50
+accommodation:
+  cost:
+    currency: "EUR"
+    price: 500
