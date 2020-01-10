@@ -6,7 +6,7 @@ This is the schema repository for DevRelTools. It contains the schema definition
 
 ### How to use?
 
-Docs coming soon
+Docs coming soon. There's schema in CUE and GraphQL. Good luck!
 
 ## Credits
 
