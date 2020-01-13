@@ -1,13 +1,8 @@
 {
-  "name": "@devreltools/schema",
-  "version": "0.1.0",
-  "description": "",
-  "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "jest"
   },
-  "author": "",
-  "license": "MIT",
   "devDependencies": {
     "graphql": "^14.5.8",
     "jest": "^24.9.0",

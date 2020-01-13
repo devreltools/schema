@@ -1,8 +1,16 @@
+# Complete Record
+name: David McKay
+email: david@rawkode.dev
+handles:
+  gitlab: rawkode
+  github: rawkode
+  slack: rawkode
+  twitter: rawkode
+---
+# Semi Complete Record
 name: David McKay
 email: david@rawkode.dev
 handles:
   github: rawkode
   slack: rawkode
   twitter: rawkode
----
-nothing: "David"

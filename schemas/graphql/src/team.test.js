@@ -4,11 +4,10 @@ const fs = require("fs");
 const graphql = require("graphql");
 const yaml = require("js-yaml");
 
-test("adds 1 + 2 to equal 3", () => {
-  const teamMemberSchema = fs.readFileSync(
-    "../../schemas/graphql/team/member.graphql",
-    "utf8"
-  );
+test("examples can be coerced into GraphQL Types", () => {
+  const teamMemberSchema = fs
+    .readFileSync("../../schemas/graphql/team/member.graphql", "utf8")
+    .replace(/type/g, "input");
 
   const schema = graphql.buildSchema(teamMemberSchema);
 
@@ -17,9 +16,8 @@ test("adds 1 + 2 to equal 3", () => {
   );
 
   members.map(member => {
-    const result = graphql.astF;
-    console.log(result);
+    expect(
+      graphql.coerceInputValue(member, schema.getType("Member"))
+    ).toStrictEqual(member);
   });
-
-  expect(1 + 2).toBe(3);
 });
