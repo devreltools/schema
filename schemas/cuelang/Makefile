@@ -1,5 +1,4 @@
-test:
-	@find ./dotfiles -type f -name "Makefile" -execdir make \;
+test: test.content test.events test.team
 
 test.content:
 	cue vet examples/content/article.yaml schemas/content/{article,common}.cue -e Article
