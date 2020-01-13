@@ -1,5 +1,12 @@
-image: nixery.dev/shell/gnumake/cue
-
-tests:
+test/cuelang:
+  image: nixery.dev/shell/gnumake/cue
   script:
+    - cd schemas/cuelang
+    - make test
+
+test/graphql:
+  image: nixery.dev/shell/gnumake/nodejs
+  script:
+    - cd schemas/graphql
+    - make deps
     - make test
