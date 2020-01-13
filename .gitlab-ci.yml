@@ -5,7 +5,9 @@ test/cuelang:
     - make test
 
 test/graphql:
-  image: nixery.dev/shell/gnumake/findutils/nodejs
+  # Missing /usr/bin/env
+  #image: nixery.dev/shell/gnumake/findutils/nodejs
+  image: node:11
   script:
     - cd schemas/graphql
     - make deps
