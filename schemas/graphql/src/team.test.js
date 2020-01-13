@@ -6,7 +6,7 @@ const yaml = require("js-yaml");
 
 test("examples can be coerced into GraphQL Types", () => {
   const teamMemberSchema = fs
-    .readFileSync("../../schemas/graphql/team/member.graphql", "utf8")
+    .readFileSync("schemas/team.graphql", "utf8")
     .replace(/type/g, "input");
 
   const schema = graphql.buildSchema(teamMemberSchema);

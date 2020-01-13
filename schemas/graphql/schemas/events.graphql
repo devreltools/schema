@@ -1,0 +1,41 @@
+enum AttendanceRole {
+  Attendee
+  Keynote
+  Presentation
+  Sponsor
+  Workshop
+}
+type Cost {
+  currency: String!
+  price: Float!
+}
+
+type Travel {
+  airportCodes: [String!]!
+  cost: Cost!
+}
+
+type Accommodation {
+  cost: Cost!
+}
+
+type Attendance {
+  event: String!
+  role: [AttendanceRole!]!
+  travel: Travel
+  accommodation: Accommodation
+}
+
+enum EventType {
+  Conference = "Conference"
+  UserGroup = "User Group"
+}
+
+type Event {
+  id: String!
+  name: String!
+  type: EventType!
+
+  dateStart: DateTime!
+  dateFinish: DateTime!
+}

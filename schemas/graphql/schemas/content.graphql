@@ -1,0 +1,21 @@
+type Metadata {
+  author: String!
+  publishedDate: DateTime!
+  tags: list(String)
+}
+
+type Article {
+  metadata: !Metadata
+  url: !String
+}
+
+enum VideoSource {
+  YouTube
+  Vimeo
+}
+
+type Video {
+  metadata: Metadata!
+  source: VideoSource!
+  sourceId: String!
+}
